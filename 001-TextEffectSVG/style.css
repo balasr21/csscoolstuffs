@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+.my-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+path:nth-child(1) {
+  stroke-dasharray: 404.8995361328125;
+  stroke-dashoffset: 404.8995361328125;
+  animation: anime 3s ease forwards;
+}
+path:nth-child(2) {
+  stroke-dasharray: 301.0549011230469;
+  stroke-dashoffset: 301.0549011230469;
+  animation: anime 3s ease forwards 0.2s;
+}
+path:nth-child(3) {
+  stroke-dasharray: 161.343994140625;
+  stroke-dashoffset: 161.343994140625;
+  animation: anime 3s ease forwards 0.4s;
+}
+path:nth-child(4) {
+  stroke-dasharray: 301.05633544921875;
+  stroke-dashoffset: 301.05633544921875;
+  animation: anime 3s ease forwards 2s;
+}
+
+@keyframes anime {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
